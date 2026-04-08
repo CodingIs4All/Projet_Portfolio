@@ -606,3 +606,144 @@ mark {
   .accueil-collaboration-conteneur h2 { font-size: 2rem; }
   .accueil-collaboration-conteneur p  { font-size: 1.2rem; }
 }
+
+/*  BANNIÈRE — pages intérieures  */
+.banniere {
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.86), rgba(248, 250, 252, 0.86)),
+    url('https://plus.unsplash.com/premium_photo-1683120869478-3897e5e75fc7?q=80&w=1538&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+
+.banniere-contenu h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  margin-bottom: 0.5rem;
+}
+
+.banniere-contenu p {
+  font-size: 1rem;
+  color: var(--couleur-texte-leger);
+}
+
+@media (min-width: 768px) {
+  .banniere            { padding: 3.5rem 2.5rem; }
+  .banniere-contenu h1 { font-size: 2.2rem; }
+}
+
+@media (min-width: 1024px) {
+  .banniere            { padding: 4rem 4rem; }
+  .banniere-contenu h1 { font-size: 2.5rem; }
+  .banniere-contenu p  { font-size: 1.2rem; }
+}
+
+
+/*  À PROPOS — Qui suis-je  */
+.section-qui {
+  background-color: var(--couleur-fond);
+}
+
+.qui-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.qui-image img {
+  width: 100%;
+  border-radius: var(--rayon-bordure);
+  box-shadow: var(--ombre);
+}
+
+.qui-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.qui-titre {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--couleur-primaire);
+}
+
+.qui-texte p {
+  color: var(--couleur-texte-leger);
+  line-height: 1.8;
+}
+
+.qui-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background-color: var(--couleur-fond-leger);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 20px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  color: var(--couleur-texte);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .qui-flex  { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .qui-image { flex: 0 0 40%; }
+  .qui-image img { height: 420px; object-fit: cover; } /* RÉFÉRENCE: https://developer.mozilla.org/fr/docs/Web/CSS/object-fit */
+  .qui-texte { flex: 1; }
+  .qui-titre { font-size: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .qui-flex  { gap: 4rem; }
+  .qui-image { flex: 0 0 55%; }
+  .qui-titre { font-size: 1.6rem; }
+}
+
+
+/*  À PROPOS — Section passions  */
+.section-passions {
+  background-color: var(--couleur-fond-leger);
+}
+
+.section-passions .carte {
+  background-color: var(--couleur-fond);
+}
+
+
+/*  À PROPOS — Mes valeurs  */
+.section-valeurs {
+  background-color: var(--couleur-fond);
+}
+
+.conteneur-valeurs {
+  max-width: var(--taille-conteneur);
+  margin: 0 auto;
+  padding: var(--padding-section);
+  text-align: center;
+}
+
+.valeurs-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.valeurs-liste p {
+  color: var(--couleur-texte-leger);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.valeurs-liste strong {
+  color: var(--couleur-texte);
+}
