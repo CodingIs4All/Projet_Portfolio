@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Hardy – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-conteneur">
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+      <nav class="nav-principale" id="navMobile">
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <ul>
+          <li><a href="index.html" class="nav-lien actif">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- BANNIÈRE PRINCIPALE -->
+    <section class="accueil-banniere">
+      <div class="accueil-banniere-contenu">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Étudiant en développement web (Développeur Full Stack)</p>
+        <p class="accueil-banniere-technologies">HTML/CSS &bull; JavaScript &bull; Git &bull; Design Web</p> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <div class="accueil-banniere-boutons">
+          <a href="projets.html" class="btn btn-primaire">
+            Voir mes projets <i class="fas fa-arrow-right"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+          </a>
+          <a href="contact.html" class="btn btn-secondaire">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DÉCOUVRIR -->
+    <section class="accueil-parcours">
+      <div class="conteneur">
+        <h2 class="section-titre">Découvrez mon parcours</h2>
+        <div class="cartes-flex">
+
+          <div class="carte">
+            <div class="carte-icone icone-bleu">
+              <i class="fas fa-code"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>À propos</h3>
+            <p>Découvrez qui je suis et ce qui me passionne dans le monde du développement.</p>
+            <a href="a-propos.html" class="lien-carte">En savoir plus <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <div class="carte">
+            <div class="carte-icone icone-violet">
+              <i class="fas fa-briefcase"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>Expertise</h3>
+            <p>Technologies et compétences qui façonnent mon profil professionnel.</p>
+            <a href="expertise.html" class="lien-carte">En savoir plus <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+          <div class="carte">
+            <div class="carte-icone icone-turquoise">
+              <i class="fas fa-envelope"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>Contact</h3>
+            <p>N'hésitez pas à me contacter pour discuter de vos projets.</p>
+            <a href="contact.html" class="lien-carte">En savoir plus <i class="fas fa-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION COLLABORATION -->
+    <section class="accueil-collaboration">
+      <div class="accueil-collaboration-conteneur">
+        <h2>Travaillons ensemble</h2>
+        <p>Je suis toujours ouvert à de nouvelles opportunités et collaborations</p>
+        <a href="contact.html" class="btn btn-primaire">Démarrer une conversation</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
