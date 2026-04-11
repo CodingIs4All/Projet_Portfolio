@@ -1,34 +1,301 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expertise – Nicolas Hardy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-conteneur">
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+      <nav class="nav-principale" id="navMobile">
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien actif">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- BANNIÈRE -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>Mon Expertise</h1>
+        <p>Technologies et compétences qui façonnent ma carrière</p>
+      </div>
+    </section>
+
+    <!-- EXPERTISE 1 — Cybersécurité -->
+    <section class="expertise-bloc">
+      <div class="conteneur">
+        <div class="expertise-flex">
+
+          <div class="expertise-image">
+            <img
+              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=700&q=80"
+              alt="Cybersécurité et hacking éthique"
+            >
+            <!-- Photo par Markus Spiske sur Unsplash -->
+          </div>
+
+          <div class="expertise-texte">
+            <div class="expertise-titre-wrap">
+              <span class="carte-icone icone-bleu">
+                <i class="fas fa-shield-alt"></i>
+              </span>
+              <h2>🛡️ Cybersécurité &amp; Hacking Éthique</h2>
+            </div>
+            <p>
+              La cybersécurité est un domaine qui me passionne profondément. Le hacking éthique
+              consiste à tester les systèmes informatiques pour en trouver les failles avant que
+              des acteurs malveillants ne le fassent. Je m'intéresse particulièrement aux tests
+              d'intrusion, à la sécurité des applications web et à la protection des données.
+              C'est un domaine en forte demande au Canada où <mark>l'apprentissage ne s'arrête jamais.</mark>
+            </p>
+            <div class="expertise-tags-wrap">
+              <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
+              <div class="expertise-tags">
+                <span class="tag-tech">Kali Linux</span>
+                <span class="tag-tech">Python</span>
+                <span class="tag-tech">Wireshark</span>
+                <span class="tag-tech">CTF (Capture The Flag)</span>
+                <span class="tag-tech">Metasploit</span>
+                <span class="tag-tech">Burp Suite</span>
+              </div>
+            </div>
+            <div class="expertise-barre-wrap">
+              <div class="barre-label">
+                <span><em>Niveau d'expertise</em></span>
+                <span class="barre-pourcentage barre-bleu">85%</span>
+              </div>
+              <div class="barre-fond">
+                <div class="barre-remplissage barre-bleu-bg" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE 2 — Trading -->
+    <section class="expertise-bloc">
+      <div class="conteneur">
+        <div class="expertise-flex">
+
+          <div class="expertise-texte">
+            <div class="expertise-titre-wrap">
+              <span class="carte-icone icone-violet">
+                <i class="fas fa-chart-line"></i>
+              </span>
+              <h2>📈 Trading Algorithmique &amp; Automatisation</h2>
+            </div>
+            <p>
+              Les marchés financiers me fascinent, particulièrement l'idée d'automatiser des
+              stratégies de trading via du code. Le trading algorithmique consiste à créer des
+              programmes qui analysent les marchés et exécutent des transactions selon des règles
+              définies, sans intervention humaine. J'utilise <em>TradingView et Pine Script</em> pour
+              backtester des stratégies et développer des indicateurs personnalisés.
+            </p>
+            <div class="expertise-tags-wrap">
+              <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
+              <div class="expertise-tags">
+                <span class="tag-tech">Pine Script</span>
+                <span class="tag-tech">Python</span>
+                <span class="tag-tech">TradingView</span>
+                <span class="tag-tech">API REST</span>
+                <span class="tag-tech">Pandas</span>
+                <span class="tag-tech">TA-Lib</span>
+              </div>
+            </div>
+            <div class="expertise-barre-wrap">
+              <div class="barre-label">
+                <span><em>Niveau d'expertise</em></span>
+                <span class="barre-pourcentage barre-violet">80%</span>
+              </div>
+              <div class="barre-fond">
+                <div class="barre-remplissage barre-violet-bg" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="expertise-image">
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80"
+              alt="Trading algorithmique et marchés financiers"
+            >
+            <!-- Photo par Maxim Hopman sur Unsplash -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE 3 — Design Web -->
+    <section class="expertise-bloc">
+      <div class="conteneur">
+        <div class="expertise-flex">
+
+          <div class="expertise-image">
+            <img
+              src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=700&q=80"
+              alt="Design web et UI/UX"
+            >
+            <!-- Photo par Kelly Sikkema sur Unsplash -->
+          </div>
+
+          <div class="expertise-texte">
+            <div class="expertise-titre-wrap">
+              <span class="carte-icone icone-turquoise">
+                <i class="fas fa-palette"></i>
+              </span>
+              <h2>🎨 Design Web</h2>
+            </div>
+            <p>
+              Le design web est ce qui donne vie à une application. Je m'intéresse à la création
+              d'interfaces visuellement cohérentes, accessibles et agréables à utiliser. Un bon
+              design, c'est l'équilibre entre l'esthétique et la fonctionnalité. Chaque couleur,
+              chaque espacement et chaque animation ont un rôle précis dans l'expérience de
+              l'utilisateur afin que les interfaces soient <mark>intuitives et accessibles</mark> à tous.
+            </p>
+            <div class="expertise-tags-wrap">
+              <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
+              <div class="expertise-tags">
+                <span class="tag-tech">HTML5 / CSS3</span>
+                <span class="tag-tech">Figma</span>
+                <span class="tag-tech">Flexbox &amp; Grid</span>
+                <span class="tag-tech">Variables CSS</span>
+                <span class="tag-tech">Responsive Design</span>
+              </div>
+            </div>
+            <div class="expertise-barre-wrap">
+              <div class="barre-label">
+                <span><em>Niveau d'expertise</em></span>
+                <span class="barre-pourcentage barre-turquoise">90%</span>
+              </div>
+              <div class="barre-fond">
+                <div class="barre-remplissage barre-turquoise-bg" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES COMPLÉMENTAIRES -->
+    <section class="section-complementaires">
+      <div class="conteneur">
+        <h2 class="section-titre">Compétences complémentaires</h2>
+        <div class="grille-complementaires">
+
+          <div class="carte-comp">
+            <span class="carte-icone icone-bleu">
+              <i class="fas fa-database"></i>
+            </span>
+            <h3>Bases de données</h3>
+            <p>PostgreSQL, MongoDB, MySQL, SQL Server</p>
+          </div>
+
+          <div class="carte-comp">
+            <span class="carte-icone icone-violet">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <h3>Performance &amp; Optimisation</h3>
+            <p>Optimisation de code, Caching, Load Balancing</p>
+          </div>
+
+          <div class="carte-comp">
+            <span class="carte-icone icone-turquoise">
+              <i class="fas fa-lock"></i>
+            </span>
+            <h3>Sécurité Web</h3>
+            <p>OWASP Top 10, Encryption, HTTPS, Authentification sécurisée</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- POURQUOI CES EXPERTISES -->
+    <section class="section-pourquoi">
+      <div class="conteneur">
+        <h2 class="section-titre">Pourquoi ces expertises ?</h2>
+        <div class="pourquoi-textes">
+          <p>
+            <strong>La cybersécurité</strong> représente l'avenir de la protection numérique.
+            Avec la multiplication des cyberattaques, les entreprises canadiennes recherchent
+            activement des professionnels capables de sécuriser leurs infrastructures. C'est
+            un domaine où <mark>l'apprentissage ne s'arrête jamais</mark> et où chaque défi est unique.
+          </p>
+          <p>
+            <strong>Le trading algorithmique</strong> combine ma passion pour la programmation
+            et mon intérêt pour les marchés financiers. Créer des stratégies automatisées qui
+            fonctionnent 24h/7j est fascinant, et l'utilisation de <em>Pine Script sur TradingView</em>
+            m'a permis de développer des compétences uniques dans ce domaine en croissance.
+          </p>
+          <p>
+            <strong>Le design web</strong> est la première impression qu'un utilisateur a d'une
+            application. Un code parfait sans un bon design ne sera jamais apprécié à sa juste
+            valeur. C'est pourquoi je m'efforce de créer des interfaces qui sont non seulement
+            belles, mais aussi <mark>intuitives et accessibles</mark> à tous.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-cta">
+      <div class="conteneur-cta">
+        <h2>Intéressé par mes compétences ?</h2>
+        <p><em>N'hésitez pas à consulter mes projets ou à me contacter pour discuter de collaboration</em></p>
+        <div class="cta-boutons">
+          <a href="projets.html" class="btn btn-primaire">Voir mes projets</a>
+          <a href="contact.html" class="btn btn-secondaire-sombre">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Étudiant en développement web | Passionné de technologie</p>
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
