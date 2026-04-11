@@ -707,7 +707,6 @@ mark {
   .qui-titre { font-size: 1.6rem; }
 }
 
-
 /*  À PROPOS — Section passions  */
 .section-passions {
   background-color: var(--couleur-fond-leger);
@@ -746,4 +745,220 @@ mark {
 
 .valeurs-liste strong {
   color: var(--couleur-texte);
+}
+
+/*  BIOGRAPHIE — général  */
+.section-bio {
+  background-color: var(--couleur-fond);
+}
+
+.bio-titre-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  margin-bottom: 2rem;
+}
+
+.bio-icone-titre {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .bio-titre-section {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bio-titre-section {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*  BIOGRAPHIE — Timeline  */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--couleur-primaire);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.4rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--couleur-primaire);
+  border: 3px solid var(--couleur-fond);
+  box-shadow: 0 0 0 2px var(--couleur-primaire);
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-style: italic;
+  color: var(--couleur-texte-leger);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-date i {
+  color: var(--couleur-primaire);
+  font-size: 0.85rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  color: var(--couleur-texte-leger);
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -2.45rem;
+  }
+
+  .timeline-item p {
+    max-width: 700px;
+  }
+}
+
+/*  BIOGRAPHIE — Expériences de travail  */
+.experience-carte {
+  background-color: var(--couleur-fond);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--rayon-bordure);
+  padding: 1.25rem;
+  box-shadow: var(--ombre);
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.experience-carte:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.experience-entete {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.experience-entreprise {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+}
+
+.experience-poste {
+  font-style: italic;
+  color: var(--couleur-primaire);
+  font-size: 0.95rem;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  color: var(--couleur-texte-leger);
+}
+
+.experience-liste {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.experience-liste li {
+  color: var(--couleur-texte-leger);
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.experience-liste li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--couleur-primaire);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .experience-carte {
+    padding: 1.75rem 2rem;
+  }
+
+  .experience-entete {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .experience-date {
+    white-space: nowrap;
+  }
+}
+
+/*  BIOGRAPHIE — Expériences de vie  */
+.vie-blocs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.vie-bloc h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  margin-bottom: 0.5rem;
+}
+
+.vie-bloc p {
+  color: var(--couleur-texte-leger);
+  line-height: 1.8;
+}
+
+@media (min-width: 1024px) {
+  .vie-blocs {
+    max-width: 800px;
+  }
 }
