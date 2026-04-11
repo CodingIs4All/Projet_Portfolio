@@ -1,14 +1,15 @@
-/*  MOBILE — par défaut (mobile-first)  */
 /*  VARIABLES CSS  */
+
+/* MOBILE — par défaut (mobile-first) */
 :root {
-  --couleur-primaire:    #2563eb;
-  --couleur-secondaire:  #7c3aed;
-  --couleur-turquoise:   #0891b2;
-  --couleur-texte:       #1e293b;
-  --couleur-texte-leger: #64748b;
-  --couleur-fond:        #ffffff;
-  --couleur-fond-leger:  #f8fafc;
-  --couleur-bordure:     #e2e8f0;
+  --couleur-primaire:       #2563eb;
+  --couleur-secondaire:     #7c3aed;
+  --couleur-turquoise:      #0891b2;
+  --couleur-texte:          #1e293b;
+  --couleur-texte-leger:    #64748b;
+  --couleur-fond:           #ffffff;
+  --couleur-fond-leger:     #f8fafc;
+  --couleur-bordure:        #e2e8f0;
 
   /* RÉFÉRENCE: https://box-shadow.dev/ */
   --rayon-bordure:          12px;
@@ -359,7 +360,7 @@ mark {
 }
 
 @media (min-width: 1024px) {
-  .btn-primaire  { font-size: 1rem; }
+  .btn-primaire   { font-size: 1rem; }
   .btn-secondaire { font-size: 1rem; }
 }
 
@@ -381,7 +382,7 @@ mark {
 }
 
 
-/*  CARTES FLEX (communes à plusieurs pages)  */
+/*  CARTES FLEX — communes  */
 .cartes-flex {
   display: flex;
   gap: var(--espacement);
@@ -447,9 +448,56 @@ mark {
 }
 
 @media (min-width: 1024px) {
-  .carte h3    { font-size: 1.3rem; }
-  .carte p     { font-size: 1rem; }
-  .lien-carte  { font-size: 1rem; }
+  .carte h3   { font-size: 1.3rem; }
+  .carte p    { font-size: 1rem; }
+  .lien-carte { font-size: 1rem; }
+}
+
+
+/*  SECTION CTA — commune  */
+.section-cta {
+  background-color: var(--couleur-fond-leger);
+}
+
+.conteneur-cta {
+  max-width: var(--taille-conteneur);
+  margin: 0 auto;
+  padding: var(--padding-section);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.conteneur-cta h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+}
+
+.conteneur-cta p {
+  color: var(--couleur-texte-leger);
+  max-width: 600px;
+}
+
+.cta-boutons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .conteneur-cta h2 { font-size: 1.8rem; }
+  .conteneur-cta p  { font-size: 1.05rem; }
+}
+
+@media (min-width: 1024px) {
+  .conteneur-cta    { padding: 60px 2rem; }
+  .conteneur-cta h2 { font-size: 2rem; }
+  .conteneur-cta p  { font-size: 1.1rem; }
 }
 
 
@@ -512,7 +560,7 @@ mark {
 }
 
 
-/*  ACCUEIL — BANNIÈRE PRINCIPALE  */
+/*  ACCUEIL — Bannière principale  */
 .accueil-banniere {
   min-height: 60vh;
   display: flex;
@@ -572,13 +620,13 @@ mark {
 }
 
 
-/*  ACCUEIL — SECTION PARCOURS  */
+/*  ACCUEIL — Section parcours  */
 .accueil-parcours {
   background-color: var(--couleur-fond);
 }
 
 
-/*  ACCUEIL — SECTION COLLABORATION  */
+/*  ACCUEIL — Section collaboration  */
 .accueil-collaboration {
   background-color: var(--couleur-fond-leger);
 }
@@ -606,6 +654,7 @@ mark {
   .accueil-collaboration-conteneur h2 { font-size: 2rem; }
   .accueil-collaboration-conteneur p  { font-size: 1.2rem; }
 }
+
 
 /*  BANNIÈRE — pages intérieures  */
 .banniere {
@@ -694,11 +743,11 @@ mark {
 }
 
 @media (min-width: 768px) {
-  .qui-flex  { flex-direction: row; align-items: center; gap: 2.5rem; }
-  .qui-image { flex: 0 0 40%; }
+  .qui-flex      { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .qui-image     { flex: 0 0 40%; }
   .qui-image img { height: 420px; object-fit: cover; } /* RÉFÉRENCE: https://developer.mozilla.org/fr/docs/Web/CSS/object-fit */
-  .qui-texte { flex: 1; }
-  .qui-titre { font-size: 1.5rem; }
+  .qui-texte     { flex: 1; }
+  .qui-titre     { font-size: 1.5rem; }
 }
 
 @media (min-width: 1024px) {
@@ -706,6 +755,7 @@ mark {
   .qui-image { flex: 0 0 55%; }
   .qui-titre { font-size: 1.6rem; }
 }
+
 
 /*  À PROPOS — Section passions  */
 .section-passions {
@@ -747,6 +797,7 @@ mark {
   color: var(--couleur-texte);
 }
 
+
 /*  BIOGRAPHIE — général  */
 .section-bio {
   background-color: var(--couleur-fond);
@@ -775,17 +826,13 @@ mark {
 }
 
 @media (min-width: 768px) {
-  .bio-titre-section {
-    font-size: 1.5rem;
-  }
+  .bio-titre-section { font-size: 1.5rem; }
 }
 
 @media (min-width: 1024px) {
-  .bio-titre-section {
-    font-size: 1.6rem;
-    margin-bottom: 2.5rem;
-  }
+  .bio-titre-section { font-size: 1.6rem; margin-bottom: 2.5rem; }
 }
+
 
 /*  BIOGRAPHIE — Timeline  */
 .timeline {
@@ -841,22 +888,12 @@ mark {
 }
 
 @media (min-width: 768px) {
-  .timeline {
-    padding-left: 2rem;
-  }
-
-  .timeline-item {
-    padding-left: 1.5rem;
-  }
-
-  .timeline-item::before {
-    left: -2.45rem;
-  }
-
-  .timeline-item p {
-    max-width: 700px;
-  }
+  .timeline              { padding-left: 2rem; }
+  .timeline-item         { padding-left: 1.5rem; }
+  .timeline-item::before { left: -2.45rem; }
+  .timeline-item p       { max-width: 700px; }
 }
+
 
 /*  BIOGRAPHIE — Expériences de travail  */
 .experience-carte {
@@ -921,10 +958,7 @@ mark {
 }
 
 @media (min-width: 768px) {
-  .experience-carte {
-    padding: 1.75rem 2rem;
-  }
-
+  .experience-carte  { padding: 1.75rem 2rem; }
   .experience-entete {
     flex-direction: row;
     justify-content: space-between;
@@ -932,11 +966,9 @@ mark {
     flex-wrap: wrap;
     gap: 0.5rem;
   }
-
-  .experience-date {
-    white-space: nowrap;
-  }
+  .experience-date   { white-space: nowrap; }
 }
+
 
 /*  BIOGRAPHIE — Expériences de vie  */
 .vie-blocs {
@@ -958,7 +990,205 @@ mark {
 }
 
 @media (min-width: 1024px) {
-  .vie-blocs {
-    max-width: 800px;
-  }
+  .vie-blocs { max-width: 800px; }
+}
+
+
+/*  EXPERTISE — Blocs image/texte  */
+.expertise-bloc {
+  background-color: var(--couleur-fond);
+}
+
+.expertise-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.expertise-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover; /* RÉFÉRENCE: https://developer.mozilla.org/fr/docs/Web/CSS/object-fit */
+  border-radius: var(--rayon-bordure);
+  box-shadow: var(--ombre);
+}
+
+.expertise-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.expertise-titre-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expertise-titre-wrap h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+  line-height: 1.3;
+}
+
+.expertise-texte > p {
+  color: var(--couleur-texte-leger);
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .expertise-flex          { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .expertise-image         { flex: 0 0 42%; }
+  .expertise-image img     { height: 320px; }
+  .expertise-texte         { flex: 1; }
+  .expertise-titre-wrap h2 { font-size: 1.35rem; }
+}
+
+@media (min-width: 1024px) {
+  .expertise-flex          { gap: 4rem; }
+  .expertise-image         { flex: 0 0 48%; }
+  .expertise-image img     { height: 420px; }
+  .expertise-titre-wrap h2 { font-size: 1.5rem; }
+}
+
+
+/*  EXPERTISE — Tags technologiques  */
+.expertise-tags-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.expertise-tags-titre {
+  font-size: 0.9rem;
+  color: var(--couleur-texte);
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-tech {
+  border: 1px solid var(--couleur-primaire);
+  color: var(--couleur-primaire);
+  border-radius: 20px;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.tag-tech:hover {
+  background-color: var(--couleur-primaire);
+  color: #ffffff;
+}
+
+
+/*  EXPERTISE — Barres de progression  */
+.expertise-barre-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.barre-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--couleur-texte-leger);
+}
+
+.barre-pourcentage  { font-weight: 700; }
+.barre-bleu         { color: var(--couleur-primaire);   }
+.barre-violet       { color: var(--couleur-secondaire); }
+.barre-turquoise    { color: var(--couleur-turquoise);  }
+
+.barre-fond {
+  width: 100%;
+  height: 8px;
+  background-color: var(--couleur-bordure);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.barre-remplissage {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.barre-bleu-bg      { background-color: var(--couleur-primaire);   }
+.barre-violet-bg    { background-color: var(--couleur-secondaire); }
+.barre-turquoise-bg { background-color: var(--couleur-turquoise);  }
+
+
+/*  EXPERTISE — Compétences complémentaires  */
+.section-complementaires {
+  background-color: var(--couleur-fond-leger);
+}
+
+.grille-complementaires {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacement);
+}
+
+.carte-comp {
+  background-color: var(--couleur-fond);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: var(--rayon-bordure);
+  padding: 1.5rem;
+  box-shadow: var(--ombre);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: var(--transition);
+}
+
+.carte-comp:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.carte-comp h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--couleur-texte);
+}
+
+.carte-comp p {
+  font-size: 0.88rem;
+  color: var(--couleur-texte-leger);
+}
+
+@media (min-width: 768px) {
+  .grille-complementaires { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grille-complementaires { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+/*  EXPERTISE — Pourquoi ces expertises  */
+.section-pourquoi {
+  background-color: var(--couleur-fond);
+}
+
+.pourquoi-textes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pourquoi-textes p {
+  color: var(--couleur-texte-leger);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .pourquoi-textes { max-width: 860px; margin: 0 auto; }
 }
