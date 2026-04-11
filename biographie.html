@@ -1,32 +1,234 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biographie – Nicolas Hardy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-conteneur">
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+      <nav class="nav-principale" id="navMobile">
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien actif">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- BANNIÈRE -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>Ma Biographie</h1>
+        <p>Mon parcours professionnel et personnel</p>
+      </div>
+    </section>
+
+    <!-- CHEMINEMENT DE CARRIÈRE -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-bleu">
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+          Cheminement de carrière
+        </h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2027 et au-delà</span>
+            </div>
+            <h3>Objectifs futurs</h3>
+            <p>
+              Mon objectif est de devenir <mark>spécialiste en cybersécurité</mark> et
+              développeur web accompli. Je souhaite combiner mes passions pour la sécurité
+              informatique, le trading algorithmique et le design web afin de bâtir une
+              carrière unique à la croisée de ces domaines.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2024 – Présent</span>
+            </div>
+            <h3>Étudiant en développement web</h3>
+            <p>
+              Actuellement inscrit au programme <strong>Techniques de l'informatique</strong>
+              au CÉGEP Shawinigan, avec une spécialisation en développement web. J'y apprends
+              HTML, CSS, JavaScript, Git ainsi que les fondements mathématiques et logiques
+              de l'informatique.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Avant 2024</span>
+            </div>
+            <h3>Reconversion professionnelle</h3>
+            <p>
+              Après plusieurs années dans le domaine de la construction, j'ai pris la
+              décision de suivre ma passion pour la technologie et de me reconvertir dans
+              le développement informatique. Une décision qui a transformé ma trajectoire
+              professionnelle.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCES DE TRAVAIL -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-violet">
+            <i class="fas fa-briefcase"></i>
+          </span>
+          Expériences de travail
+        </h2>
+
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">Entreprise de construction</h3>
+              <p class="experience-poste">Plâtrier</p>
+            </div>
+            <span class="experience-date">2020 – 2024</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Réalisation de travaux de plâtrage résidentiel et commercial</li>
+            <li>Gestion autonome des chantiers et respect des délais</li>
+            <li>Développement de compétences en rigueur, précision et travail d'équipe</li>
+          </ul>
+        </div>
+
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">À venir</h3>
+              <p class="experience-poste">Poste à définir</p>
+            </div>
+            <span class="experience-date">2025 – ...</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">À venir</h3>
+              <p class="experience-poste">Poste à définir</p>
+            </div>
+            <span class="experience-date">2026 – ...</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCES DE VIE -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-turquoise">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          Expériences de vie
+        </h2>
+
+        <div class="vie-blocs">
+
+          <div class="vie-bloc">
+            <h3>Intérêts personnels</h3>
+            <p>
+              Passionné de jeux vidéo, notamment <strong>Hearthstone</strong>,
+              j'apprécie la stratégie et la profondeur des systèmes de jeu. En dehors du
+              gaming, je m'intéresse activement à la bourse et aux marchés financiers,
+              ce qui m'a naturellement conduit vers le trading algorithmique.
+            </p>
+          </div>
+
+          <div class="vie-bloc">
+            <h3><mark>Retour aux études</mark></h3>
+            <p>
+              Décider de retourner aux études après plusieurs années sur le marché du
+              travail n'était pas une décision facile. C'est la passion pour la technologie
+              et la conviction que le développement web représente l'avenir qui m'ont
+              poussé à franchir ce pas.
+            </p>
+          </div>
+
+          <div class="vie-bloc">
+            <h3>Apprentissage continu</h3>
+            <p>
+              <em>
+                Au-delà du code, j'explore des sujets comme la cybersécurité, le trading
+                algorithmique et le design d'interfaces. La curiosité est un moteur
+                essentiel de mon développement personnel et professionnel.
+              </em>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Étudiant en développement web | Passionné de technologie</p>
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
