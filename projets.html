@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projets – Nicolas Hardy</title>
+  <title>Nicolas Hardy – Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- En-tête du site avec logo et navigation -->
   <header class="header">
     <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
       <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
       <button class="menu-hamburger" id="menuToggle"
               aria-label="Ouvrir le menu"
               aria-expanded="false"
@@ -21,23 +25,28 @@
         <span class="barre"></span>
         <span class="barre"></span>
       </button>
+
+      <!-- Navigation principale -->
       <nav class="nav-principale" id="navMobile">
-        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
         <ul>
-          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="index.html" class="nav-lien actif">Accueil</a></li>
           <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
           <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
           <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
-          <li><a href="projets.html" class="nav-lien actif">Projets</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
           <li><a href="contact.html" class="nav-lien">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
 
-    <!-- BANNIÈRE -->
+    <!-- Bannière d'introduction de la page projets -->
     <section class="banniere">
       <div class="banniere-contenu">
         <h1>Mes Projets</h1>
@@ -45,12 +54,12 @@
       </div>
     </section>
 
-    <!-- GRILLE DE PROJETS -->
+    <!-- Grille de présentation de tous les projets -->
     <section class="section-projets">
       <div class="conteneur">
         <div class="grille-projets">
 
-          <!-- PROJET 1 -->
+          <!-- Projet 1 – Portfolio personnel -->
           <div class="carte-projet">
             <div class="projet-image-wrap">
               <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80" alt="Portfolio personnel – Nicolas Hardy">
@@ -77,6 +86,7 @@
                 <span class="tag-tech">Grid CSS</span>
                 <span class="tag-tech">Git</span>
               </div>
+              <!-- Boutons vers le dépôt GitHub et la démo en ligne -->
               <div class="projet-boutons">
                 <a href="https://github.com/CodingIs4All" class="btn-projet-github">
                   <i class="fab fa-github"></i> GitHub
@@ -88,7 +98,7 @@
             </div>
           </div>
 
-          <!-- PROJET 2 -->
+          <!-- Projet 2 – Application gestion de tâches -->
           <div class="carte-projet">
             <div class="projet-image-wrap">
               <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80" alt="Application de gestion de tâches" >
@@ -115,6 +125,7 @@
                 <span class="tag-tech">LocalStorage</span>
                 <span class="tag-tech">Git</span>
               </div>
+              <!-- Boutons vers le dépôt GitHub et la démo en ligne -->
               <div class="projet-boutons">
                 <a href="https://github.com/CodingIs4All" class="btn-projet-github">
                   <i class="fab fa-github"></i> GitHub
@@ -126,7 +137,7 @@
             </div>
           </div>
 
-          <!-- PROJET 3 -->
+          <!-- Projet 3 – Dashboard trading analytics -->
           <div class="carte-projet">
             <div class="projet-image-wrap">
               <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80" alt="Tableau de bord trading algorithmique">
@@ -153,6 +164,7 @@
                 <span class="tag-tech">Pine Script</span>
                 <span class="tag-tech">TradingView</span>
               </div>
+              <!-- Boutons vers le dépôt GitHub et la démo en ligne -->
               <div class="projet-boutons">
                 <a href="https://github.com/CodingIs4All" class="btn-projet-github">
                   <i class="fab fa-github"></i> GitHub
@@ -164,7 +176,7 @@
             </div>
           </div>
 
-          <!-- PROJET 4 -->
+          <!-- Projet 4 – CTF cybersécurité éthique -->
           <div class="carte-projet">
             <div class="projet-image-wrap">
               <img
@@ -192,6 +204,7 @@
                 <span class="tag-tech">Burp Suite</span>
                 <span class="tag-tech">CTF</span>
               </div>
+              <!-- Boutons vers le dépôt GitHub et la démo en ligne -->
               <div class="projet-boutons">
                 <a href="https://github.com/CodingIs4All" class="btn-projet-github">
                   <i class="fab fa-github"></i> GitHub
@@ -207,9 +220,10 @@
       </div>
     </section>
 
-    <!-- STATISTIQUES -->
+    <!-- Section des statistiques du portfolio -->
     <section class="section-stats">
       <div class="conteneur">
+        <!-- Chiffres clés du parcours -->
         <div class="grille-stats">
           <div class="stat-item">
             <span class="stat-nombre">4+</span>
@@ -233,24 +247,28 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Pied de page avec texte et liens sociaux -->
   <footer class="footer">
     <div class="footer-conteneur">
-      <p>Étudiant en développement web | Passionné de technologie</p>
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
       <div class="footer-liens">
-        <a href="https://github.com/CodingIs4All" class="footer-icone" aria-label="GitHub">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
-        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
         <a href="#" class="footer-icone" aria-label="CV">
-          <i class="fas fa-file-alt"></i>
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
       </div>
     </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
