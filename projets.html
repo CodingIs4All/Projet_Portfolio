@@ -1,32 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets – Nicolas Hardy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-conteneur">
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+      <nav class="nav-principale" id="navMobile">
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien actif">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- BANNIÈRE -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>Mes Projets</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+
+    <!-- GRILLE DE PROJETS -->
+    <section class="section-projets">
+      <div class="conteneur">
+        <div class="grille-projets">
+
+          <!-- PROJET 1 -->
+          <div class="carte-projet">
+            <div class="projet-image-wrap">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80" alt="Portfolio personnel – Nicolas Hardy">
+              <span class="projet-badge">Projet 1</span>
+            </div>
+            <div class="projet-contenu">
+              <div class="projet-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Janvier 2025</span>
+              </div>
+              <h3 class="projet-titre">Portfolio Personnel</h3>
+              <p class="projet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="projet-contexte-label">Contexte :</p>
+              <p class="projet-contexte-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              </p>
+              <p class="projet-tech-label">Technologies utilisées :</p>
+              <div class="projet-tags">
+                <span class="tag-tech">HTML5</span>
+                <span class="tag-tech">CSS3</span>
+                <span class="tag-tech">Flexbox</span>
+                <span class="tag-tech">Grid CSS</span>
+                <span class="tag-tech">Git</span>
+              </div>
+              <div class="projet-boutons">
+                <a href="https://github.com/CodingIs4All" class="btn-projet-github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-projet-demo">
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJET 2 -->
+          <div class="carte-projet">
+            <div class="projet-image-wrap">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&q=80" alt="Application de gestion de tâches" >
+              <span class="projet-badge">Projet 2</span>
+            </div>
+            <div class="projet-contenu">
+              <div class="projet-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Mars 2025</span>
+              </div>
+              <h3 class="projet-titre">Application Gestion de Tâches</h3>
+              <p class="projet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              </p>
+              <p class="projet-contexte-label">Contexte :</p>
+              <p class="projet-contexte-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.
+              </p>
+              <p class="projet-tech-label">Technologies utilisées :</p>
+              <div class="projet-tags">
+                <span class="tag-tech">HTML5</span>
+                <span class="tag-tech">CSS3</span>
+                <span class="tag-tech">JavaScript</span>
+                <span class="tag-tech">LocalStorage</span>
+                <span class="tag-tech">Git</span>
+              </div>
+              <div class="projet-boutons">
+                <a href="https://github.com/CodingIs4All" class="btn-projet-github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-projet-demo">
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJET 3 -->
+          <div class="carte-projet">
+            <div class="projet-image-wrap">
+              <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80" alt="Tableau de bord trading algorithmique">
+              <span class="projet-badge">Projet 3</span>
+            </div>
+            <div class="projet-contenu">
+              <div class="projet-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Juin 2025</span>
+              </div>
+              <h3 class="projet-titre">Dashboard Trading Analytics</h3>
+              <p class="projet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+              </p>
+              <p class="projet-contexte-label">Contexte :</p>
+              <p class="projet-contexte-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis ipsum. Praesent mauris.
+              </p>
+              <p class="projet-tech-label">Technologies utilisées :</p>
+              <div class="projet-tags">
+                <span class="tag-tech">HTML5</span>
+                <span class="tag-tech">CSS3</span>
+                <span class="tag-tech">JavaScript</span>
+                <span class="tag-tech">Pine Script</span>
+                <span class="tag-tech">TradingView</span>
+              </div>
+              <div class="projet-boutons">
+                <a href="https://github.com/CodingIs4All" class="btn-projet-github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-projet-demo">
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJET 4 -->
+          <div class="carte-projet">
+            <div class="projet-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=700&q=80" alt="Outil de cybersécurité">
+              <span class="projet-badge">Projet 4</span>
+            </div>
+            <div class="projet-contenu">
+              <div class="projet-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Septembre 2025</span>
+              </div>
+              <h3 class="projet-titre">CTF — Cybersécurité Éthique</h3>
+              <p class="projet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices, justo at facilisis viverra, nulla lorem commodo nisi.
+              </p>
+              <p class="projet-contexte-label">Contexte :</p>
+              <p class="projet-contexte-texte">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+              </p>
+              <p class="projet-tech-label">Technologies utilisées :</p>
+              <div class="projet-tags">
+                <span class="tag-tech">Kali Linux</span>
+                <span class="tag-tech">Python</span>
+                <span class="tag-tech">Wireshark</span>
+                <span class="tag-tech">Burp Suite</span>
+                <span class="tag-tech">CTF</span>
+              </div>
+              <div class="projet-boutons">
+                <a href="https://github.com/CodingIs4All" class="btn-projet-github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-projet-demo">
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTIQUES -->
+    <section class="section-stats">
+      <div class="conteneur">
+        <div class="grille-stats">
+          <div class="stat-item">
+            <span class="stat-nombre">4+</span>
+            <span class="stat-label">Projets complétés</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-nombre stat-violet">8+</span>
+            <span class="stat-label">Technologies maîtrisées</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-nombre stat-turquoise">1+</span>
+            <span class="stat-label">An d'études</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-nombre stat-bleu-clair">100%</span>
+            <span class="stat-label">Engagement qualité</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Étudiant en développement web | Passionné de technologie</p>
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
