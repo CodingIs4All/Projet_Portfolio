@@ -1,5 +1,6 @@
 /*
   RÉFÉRENCES:
+    https://codepen.io/kihoro2d/pen/rNgaRwJ?editors=1100
     https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
     https://www.youtube.com/watch?v=OtLb_YdBm3w
     https://www.youtube.com/watch?v=7D01ysb4dmA&t=1689s
