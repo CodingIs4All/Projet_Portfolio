@@ -45,6 +45,10 @@
 /* ============================================
    RESET & BASE
    ============================================ */
+/* RÉFÉRENCE: https://www.w3schools.com/cssref/sel_all.php 
+              https://www.w3schools.com/cssref/css_ref_pseudo_elements.php 
+              https://www.w3schools.com/cssref/css_inherit.php 
+              https://www.w3schools.com/tags/tag_mark.asp */
 *,
 *::before,
 *::after {
@@ -92,6 +96,8 @@ mark {
 /* ============================================
    HEADER & NAVIGATION
    ============================================ */
+/* RÉFÉRENCE: https://www.w3schools.com/howto/howto_css_sticky_element.asp
+              https://www.w3schools.com/cssref/pr_font_weight.php */
 .header {
   position: sticky;
   top: 0;
@@ -176,6 +182,10 @@ mark {
 /* ============================================
    HAMBURGER — Bouton mobile
    ============================================ */
+/*RÉFÉRENCES: https://www.w3schools.com/css/css3_transitions_timing.asp
+              https://www.joshwcomeau.com/css/transforms/
+              https://www.w3schools.com/cssref/css_functions.php */
+
 .menu-hamburger {
   display: none;
   flex-direction: column;
@@ -618,6 +628,8 @@ mark {
 /* ============================================
    ACCUEIL — Bannière principale
    ============================================ */
+/* RÉFÉRENCE : https://www.w3schools.com/cssref/func_linear-gradient.php */
+
 .accueil-banniere {
   min-height: 60vh;
   display: flex;
@@ -1365,6 +1377,8 @@ mark {
   font-size: 0.88rem;
   color: var(--couleur-texte-leger);
 }
+
+/* RÉFÉRENCE : https://www.w3schools.com/cssref/func_repeat.php */
 
 @media (min-width: 768px) {
   .grille-complementaires {
