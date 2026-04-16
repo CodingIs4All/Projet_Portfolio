@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expertise – Nicolas Hardy</title>
+  <title>Nicolas Hardy – Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- En-tête du site avec logo et navigation -->
   <header class="header">
     <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
       <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
       <button class="menu-hamburger" id="menuToggle"
               aria-label="Ouvrir le menu"
               aria-expanded="false"
@@ -21,13 +25,17 @@
         <span class="barre"></span>
         <span class="barre"></span>
       </button>
+
+      <!-- Navigation principale -->
       <nav class="nav-principale" id="navMobile">
-        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
         <ul>
-          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="index.html" class="nav-lien actif">Accueil</a></li>
           <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
           <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
-          <li><a href="expertise.html" class="nav-lien actif">Expertise</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
           <li><a href="projets.html" class="nav-lien">Projets</a></li>
           <li><a href="contact.html" class="nav-lien">Contact</a></li>
         </ul>
@@ -35,9 +43,10 @@
     </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
 
-    <!-- BANNIÈRE -->
+    <!-- Bannière d'introduction de la page expertise -->
     <section class="banniere">
       <div class="banniere-contenu">
         <h1>Mon Expertise</h1>
@@ -45,15 +54,15 @@
       </div>
     </section>
 
-    <!-- EXPERTISE 1 — Cybersécurité -->
+    <!-- Bloc expertise – Cybersécurité et hacking éthique -->
     <section class="expertise-bloc">
       <div class="conteneur">
         <div class="expertise-flex">
-
+          <!-- Image illustrant la cybersécurité -->
           <div class="expertise-image">
             <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=700&q=80" alt="Cybersécurité et hacking éthique">
           </div>
-
+          <!-- Texte et détails de l'expertise cybersécurité -->
           <div class="expertise-texte">
             <div class="expertise-titre-wrap">
               <span class="carte-icone icone-bleu">
@@ -68,6 +77,7 @@
               d'intrusion, à la sécurité des applications web et à la protection des données.
               C'est un domaine en forte demande au Canada où <mark>l'apprentissage ne s'arrête jamais.</mark>
             </p>
+            <!-- Technologies et outils liés à la cybersécurité -->
             <div class="expertise-tags-wrap">
               <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
               <div class="expertise-tags">
@@ -79,6 +89,7 @@
                 <span class="tag-tech">Burp Suite</span>
               </div>
             </div>
+            <!-- Barre de progression du niveau d'expertise -->
             <div class="expertise-barre-wrap">
               <div class="barre-label">
                 <span><em>Niveau d'expertise</em></span>
@@ -94,11 +105,11 @@
       </div>
     </section>
 
-    <!-- EXPERTISE 2 — Trading -->
+    <!-- Bloc expertise – Trading algorithmique et automatisation -->
     <section class="expertise-bloc">
       <div class="conteneur">
         <div class="expertise-flex">
-
+          <!-- Texte et détails de l'expertise trading -->
           <div class="expertise-texte">
             <div class="expertise-titre-wrap">
               <span class="carte-icone icone-violet">
@@ -113,6 +124,7 @@
               définies, sans intervention humaine. J'utilise <em>TradingView et Pine Script</em> pour
               backtester des stratégies et développer des indicateurs personnalisés.
             </p>
+            <!-- Technologies et outils liés au trading -->
             <div class="expertise-tags-wrap">
               <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
               <div class="expertise-tags">
@@ -124,6 +136,7 @@
                 <span class="tag-tech">TA-Lib</span>
               </div>
             </div>
+            <!-- Barre de progression du niveau d'expertise -->
             <div class="expertise-barre-wrap">
               <div class="barre-label">
                 <span><em>Niveau d'expertise</em></span>
@@ -134,7 +147,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Image illustrant le trading -->
           <div class="expertise-image">
             <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80" alt="Trading algorithmique et marchés financiers">
           </div>
@@ -143,15 +156,15 @@
       </div>
     </section>
 
-    <!-- EXPERTISE 3 — Design Web -->
+    <!-- Bloc expertise – Design web -->
     <section class="expertise-bloc">
       <div class="conteneur">
         <div class="expertise-flex">
-
+          <!-- Image illustrant le design web -->
           <div class="expertise-image">
             <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=700&q=80" alt="Design web et UI/UX">
           </div>
-
+          <!-- Texte et détails de l'expertise design web -->
           <div class="expertise-texte">
             <div class="expertise-titre-wrap">
               <span class="carte-icone icone-turquoise">
@@ -166,6 +179,7 @@
               chaque espacement et chaque animation ont un rôle précis dans l'expérience de
               l'utilisateur afin que les interfaces soient <mark>intuitives et accessibles</mark> à tous.
             </p>
+            <!-- Technologies et outils liés au design web -->
             <div class="expertise-tags-wrap">
               <p class="expertise-tags-titre"><strong>Technologies &amp; outils maîtrisés :</strong></p>
               <div class="expertise-tags">
@@ -176,6 +190,7 @@
                 <span class="tag-tech">Responsive Design</span>
               </div>
             </div>
+            <!-- Barre de progression du niveau d'expertise -->
             <div class="expertise-barre-wrap">
               <div class="barre-label">
                 <span><em>Niveau d'expertise</em></span>
@@ -191,12 +206,14 @@
       </div>
     </section>
 
-    <!-- COMPÉTENCES COMPLÉMENTAIRES -->
+    <!-- Section des compétences complémentaires -->
     <section class="section-complementaires">
       <div class="conteneur">
         <h2 class="section-titre">Compétences complémentaires</h2>
+        <!-- Cartes des compétences secondaires -->
         <div class="grille-complementaires">
 
+          <!-- Carte bases de données -->
           <div class="carte-comp">
             <span class="carte-icone icone-bleu">
               <i class="fas fa-database"></i>
@@ -205,6 +222,7 @@
             <p>PostgreSQL, MongoDB, MySQL, SQL Server</p>
           </div>
 
+          <!-- Carte performance et optimisation -->
           <div class="carte-comp">
             <span class="carte-icone icone-violet">
               <i class="fas fa-bolt"></i>
@@ -213,6 +231,7 @@
             <p>Optimisation de code, Caching, Load Balancing</p>
           </div>
 
+          <!-- Carte sécurité web -->
           <div class="carte-comp">
             <span class="carte-icone icone-turquoise">
               <i class="fas fa-lock"></i>
@@ -225,10 +244,11 @@
       </div>
     </section>
 
-    <!-- POURQUOI CES EXPERTISES -->
+    <!-- Section d'explication du choix des expertises -->
     <section class="section-pourquoi">
       <div class="conteneur">
         <h2 class="section-titre">Pourquoi ces expertises ?</h2>
+        <!-- Textes de justification pour chaque domaine -->
         <div class="pourquoi-textes">
           <p>
             <strong>La cybersécurité</strong> représente l'avenir de la protection numérique.
@@ -252,11 +272,12 @@
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- Section d'appel à l'action -->
     <section class="section-cta">
       <div class="conteneur-cta">
         <h2>Intéressé par mes compétences ?</h2>
         <p><em>N'hésitez pas à consulter mes projets ou à me contacter pour discuter de collaboration</em></p>
+        <!-- Boutons vers les projets et le contact -->
         <div class="cta-boutons">
           <a href="projets.html" class="btn btn-primaire">Voir mes projets</a>
           <a href="contact.html" class="btn btn-secondaire-sombre">Me contacter</a>
@@ -266,24 +287,28 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Pied de page avec texte et liens sociaux -->
   <footer class="footer">
     <div class="footer-conteneur">
-      <p>Étudiant en développement web | Passionné de technologie</p>
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
       <div class="footer-liens">
-        <a href="https://github.com/CodingIs4All" class="footer-icone" aria-label="GitHub">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
-        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
         <a href="#" class="footer-icone" aria-label="CV">
-          <i class="fas fa-file-alt"></i>
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
       </div>
     </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
