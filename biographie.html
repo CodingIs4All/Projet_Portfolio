@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biographie – Nicolas Hardy</title>
+  <title>Nicolas Hardy – Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- En-tête du site avec logo et navigation -->
   <header class="header">
     <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
       <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
       <button class="menu-hamburger" id="menuToggle"
               aria-label="Ouvrir le menu"
               aria-expanded="false"
@@ -21,12 +25,16 @@
         <span class="barre"></span>
         <span class="barre"></span>
       </button>
+
+      <!-- Navigation principale -->
       <nav class="nav-principale" id="navMobile">
-        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
         <ul>
-          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="index.html" class="nav-lien actif">Accueil</a></li>
           <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
-          <li><a href="biographie.html" class="nav-lien actif">Biographie</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
           <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
           <li><a href="projets.html" class="nav-lien">Projets</a></li>
           <li><a href="contact.html" class="nav-lien">Contact</a></li>
@@ -35,9 +43,10 @@
     </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
 
-    <!-- BANNIÈRE -->
+    <!-- Bannière d'introduction de la biographie -->
     <section class="banniere">
       <div class="banniere-contenu">
         <h1>Ma Biographie</h1>
@@ -45,7 +54,7 @@
       </div>
     </section>
 
-    <!-- CHEMINEMENT DE CARRIÈRE -->
+    <!-- Chronologie du parcours de carrière -->
     <section class="section-bio">
       <div class="conteneur">
 
@@ -57,7 +66,7 @@
         </h2>
 
         <div class="timeline">
-
+          <!-- Objectifs futurs -->
           <div class="timeline-item">
             <div class="timeline-date">
               <i class="fas fa-calendar-alt"></i>
@@ -72,6 +81,7 @@
             </p>
           </div>
 
+          <!-- Formation actuelle -->
           <div class="timeline-item">
             <div class="timeline-date">
               <i class="fas fa-calendar-alt"></i>
@@ -86,6 +96,7 @@
             </p>
           </div>
 
+          <!-- Reconversion professionnelle -->
           <div class="timeline-item">
             <div class="timeline-date">
               <i class="fas fa-calendar-alt"></i>
@@ -104,7 +115,7 @@
       </div>
     </section>
 
-    <!-- EXPÉRIENCES DE TRAVAIL -->
+    <!-- Expériences de travail -->
     <section class="section-bio">
       <div class="conteneur">
 
@@ -115,6 +126,7 @@
           Expériences de travail
         </h2>
 
+        <!-- Expérience principale -->
         <div class="experience-carte">
           <div class="experience-entete">
             <div>
@@ -130,6 +142,7 @@
           </ul>
         </div>
 
+        <!-- Première expérience à venir -->
         <div class="experience-carte">
           <div class="experience-entete">
             <div>
@@ -145,6 +158,7 @@
           </ul>
         </div>
 
+        <!-- Deuxième expérience à venir -->
         <div class="experience-carte">
           <div class="experience-entete">
             <div>
@@ -163,7 +177,7 @@
       </div>
     </section>
 
-    <!-- EXPÉRIENCES DE VIE -->
+    <!-- Expériences de vie et centres d'intérêt -->
     <section class="section-bio">
       <div class="conteneur">
 
@@ -175,7 +189,7 @@
         </h2>
 
         <div class="vie-blocs">
-
+          <!-- Intérêts personnels -->
           <div class="vie-bloc">
             <h3>Intérêts personnels</h3>
             <p>
@@ -186,6 +200,7 @@
             </p>
           </div>
 
+          <!-- Retour aux études -->
           <div class="vie-bloc">
             <h3><mark>Retour aux études</mark></h3>
             <p>
@@ -196,6 +211,7 @@
             </p>
           </div>
 
+          <!-- Apprentissage continu -->
           <div class="vie-bloc">
             <h3>Apprentissage continu</h3>
             <p>
@@ -213,24 +229,28 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Pied de page avec texte et liens sociaux -->
   <footer class="footer">
     <div class="footer-conteneur">
-      <p>Étudiant en développement web | Passionné de technologie</p>
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
       <div class="footer-liens">
-        <a href="https://github.com/CodingIs4All" class="footer-icone" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
-        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
         <a href="#" class="footer-icone" aria-label="CV">
-          <i class="fas fa-file-alt"></i>
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
       </div>
     </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
