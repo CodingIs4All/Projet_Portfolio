@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicolas Hardy – Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- En-tête du site avec logo et navigation -->
   <header class="header">
     <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
       <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
       <button class="menu-hamburger" id="menuToggle"
               aria-label="Ouvrir le menu"
               aria-expanded="false"
@@ -21,8 +25,12 @@
         <span class="barre"></span>
         <span class="barre"></span>
       </button>
+
+      <!-- Navigation principale -->
       <nav class="nav-principale" id="navMobile">
+        <!-- Bouton pour fermer le menu mobile -->
         <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
         <ul>
           <li><a href="index.html" class="nav-lien actif">Accueil</a></li>
           <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
@@ -35,14 +43,18 @@
     </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
 
-    <!-- BANNIÈRE PRINCIPALE -->
+    <!-- Section d'accueil / bannière principale -->
     <section class="accueil-banniere">
       <div class="accueil-banniere-contenu">
+        <!-- Titre principal de la page -->
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>Étudiant en développement web (Développeur Full Stack)</p>
+        <!-- Technologies et compétences affichées dans la bannière -->
         <p class="accueil-banniere-technologies">HTML/CSS &bull; JavaScript &bull; Git &bull; Design Web</p> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Boutons d'appel à l'action -->
         <div class="accueil-banniere-boutons">
           <a href="projets.html" class="btn btn-primaire">
             Voir mes projets <i class="fas fa-arrow-right"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
@@ -52,12 +64,13 @@
       </div>
     </section>
 
-    <!-- SECTION DÉCOUVRIR -->
+    <!-- Section de présentation des principales pages du portfolio -->
     <section class="accueil-parcours">
       <div class="conteneur">
         <h2 class="section-titre">Découvrez mon parcours</h2>
+        <!-- Cartes de présentation des sections principales -->
         <div class="cartes-flex">
-
+          <!-- Carte À propos -->
           <div class="carte">
             <div class="carte-icone icone-bleu">
               <i class="fas fa-code"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
@@ -66,7 +79,7 @@
             <p>Découvrez qui je suis et ce qui me passionne dans le monde du développement.</p>
             <a href="a-propos.html" class="lien-carte">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
-
+          <!-- Carte Expertise -->
           <div class="carte">
             <div class="carte-icone icone-violet">
               <i class="fas fa-briefcase"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
@@ -75,7 +88,7 @@
             <p>Technologies et compétences qui façonnent mon profil professionnel.</p>
             <a href="expertise.html" class="lien-carte">En savoir plus <i class="fas fa-arrow-right"></i></a>
           </div>
-
+          <!-- Carte Contact -->
           <div class="carte">
             <div class="carte-icone icone-turquoise">
               <i class="fas fa-envelope"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
@@ -89,7 +102,7 @@
       </div>
     </section>
 
-    <!-- SECTION COLLABORATION -->
+    <!-- Section d’appel à la collaboration -->
     <section class="accueil-collaboration">
       <div class="accueil-collaboration-conteneur">
         <h2>Travaillons ensemble</h2>
@@ -100,10 +113,11 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- Pied de page avec texte et liens sociaux -->
   <footer class="footer">
     <div class="footer-conteneur">
       <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
       <div class="footer-liens">
         <a href="https://github.com/CodingIs4All" class="footer-icone"
            aria-label="GitHub" target="_blank" rel="noopener noreferrer">
@@ -119,7 +133,8 @@
       </div>
     </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
