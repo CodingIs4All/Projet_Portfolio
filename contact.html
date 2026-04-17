@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Nicolas Hardy</title>
+  <title>Nicolas Hardy – Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- En-tête du site avec logo et navigation -->
   <header class="header">
     <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
       <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
       <button class="menu-hamburger" id="menuToggle"
               aria-label="Ouvrir le menu"
               aria-expanded="false"
@@ -21,8 +25,12 @@
         <span class="barre"></span>
         <span class="barre"></span>
       </button>
+
+      <!-- Navigation principale -->
       <nav class="nav-principale" id="navMobile">
-        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button>
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
         <ul>
           <li><a href="index.html" class="nav-lien">Accueil</a></li>
           <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
@@ -34,9 +42,11 @@
       </nav>
     </div>
   </header>
+
+   <!-- Contenu principal de la page -->
   <main>
 
-    <!-- BANNIÈRE -->
+    <!-- Bannière d'introduction de la page contact -->
     <section class="banniere">
       <div class="banniere-contenu">
         <h1>Me Contacter</h1>
@@ -44,15 +54,16 @@
       </div>
     </section>
 
-    <!-- SECTION PRINCIPALE -->
+    <!-- Section principale avec informations de contact et formulaire -->
     <section class="section-contact">
       <div class="conteneur">
         <div class="contact-flex">
 
-          <!-- COLONNE GAUCHE — Informations -->
+          <!-- Colonne gauche – Informations de contact -->
           <div class="contact-infos">
             <h2 class="contact-infos-titre">Informations de contact</h2>
 
+            <!-- Adresse courriel -->
             <div>
               <p class="contact-label">Email</p>
               <a href="mailto:nicolashardy41@gmail.com" class="contact-email-lien">
@@ -60,6 +71,7 @@
               </a>
             </div>
 
+            <!-- Numéro de téléphone -->
             <div class="contact-item">
               <span class="carte-icone icone-violet">
                 <i class="fas fa-phone"></i>
@@ -72,6 +84,7 @@
               </div>
             </div>
 
+            <!-- Localisation géographique -->
             <div class="contact-item">
               <span class="carte-icone icone-turquoise">
                 <i class="fas fa-map-marker-alt"></i>
@@ -82,6 +95,7 @@
               </div>
             </div>
 
+            <!-- Encadré de disponibilité pour collaborations -->
             <div class="contact-dispo">
               <h3 class="contact-dispo-titre">Disponibilité</h3>
               <p>
@@ -92,10 +106,11 @@
             </div>
           </div>
 
-          <!-- COLONNE DROITE — Formulaire -->
+          <!-- Colonne droite – Formulaire de contact -->
           <div class="contact-formulaire-wrap">
             <h2 class="contact-formulaire-titre">Envoyez-moi un message</h2>
 
+             <!-- Formulaire avec champs prénom, nom, courriel et message -->
             <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
               <table class="contact-table">
                 <tbody>
@@ -162,11 +177,12 @@
       </div>
     </section>
 
-    <!-- AUTRE MÉTHODE -->
+     <!-- Section de contact alternatif via les réseaux professionnels -->
     <section class="section-autre-methode">
       <div class="conteneur-cta">
         <h2>Préférez-vous une autre méthode ?</h2>
         <p>Retrouvez-moi également sur les réseaux professionnels</p>
+        <!-- Boutons vers LinkedIn, GitHub et le CV -->
         <div class="autre-methode-boutons">
           <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="btn btn-primaire">
             <i class="fab fa-linkedin-in"></i> LinkedIn
@@ -182,24 +198,28 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- Pied de page avec texte et liens sociaux -->
   <footer class="footer">
     <div class="footer-conteneur">
-      <p>Étudiant en développement web | Passionné de technologie</p>
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
       <div class="footer-liens">
-        <a href="https://github.com/CodingIs4All" class="footer-icone" aria-label="GitHub">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
-        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
         <a href="#" class="footer-icone" aria-label="CV">
-          <i class="fas fa-file-alt"></i>
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
         </a>
       </div>
     </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
