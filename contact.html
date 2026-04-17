@@ -1,34 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Hardy – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- En-tête du site avec logo et navigation -->
+  <header class="header">
+    <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+
+      <!-- Navigation principale -->
+      <nav class="nav-principale" id="navMobile">
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien actif">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- Bannière d'introduction de la page contact -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>Me Contacter</h1>
+        <p>N'hésitez pas à me contacter pour toute question ou opportunité</p>
+      </div>
+    </section>
+
+    <!-- Section principale avec informations de contact et formulaire -->
+    <section class="section-contact">
+      <div class="conteneur">
+        <div class="contact-flex">
+
+          <!-- Colonne gauche – Informations de contact -->
+          <div class="contact-infos">
+            <h2 class="contact-infos-titre">Informations de contact</h2>
+
+            <!-- Adresse courriel -->
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:nicolashardy41@gmail.com" class="contact-email-lien">
+                nicolashardy41@gmail.com
+              </a>
+            </div>
+
+            <!-- Numéro de téléphone -->
+            <div class="contact-item">
+              <span class="carte-icone icone-violet">
+                <i class="fas fa-phone"></i>
+              </span>
+              <div>
+                <p class="contact-item-titre">Téléphone</p>
+                <a href="tel:+14505216465" class="contact-item-valeur">
+                  +1 (450) 521-6465
+                </a>
+              </div>
+            </div>
+
+            <!-- Localisation géographique -->
+            <div class="contact-item">
+              <span class="carte-icone icone-turquoise">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <div>
+                <p class="contact-item-titre">Localisation</p>
+                <p class="contact-item-texte">Granby, Québec, Canada</p>
+              </div>
+            </div>
+
+            <!-- Encadré de disponibilité pour collaborations -->
+            <div class="contact-dispo">
+              <h3 class="contact-dispo-titre">Disponibilité</h3>
+              <p>
+                Je suis actuellement disponible pour des projets freelance et des
+                opportunités de collaboration. Je réponds généralement sous
+                <strong>24-48 heures</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Colonne droite – Formulaire de contact -->
+          <div class="contact-formulaire-wrap">
+            <h2 class="contact-formulaire-titre">Envoyez-moi un message</h2>
+
+             <!-- Formulaire avec champs prénom, nom, courriel et message -->
+            <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+              <table class="contact-table">
+                <tbody>
+                  <tr>
+                    <th><label for="prenom">Prénom <span class="obligatoire">*</span></label></th>
+                    <td>
+                      <input
+                        type="text"
+                        id="prenom"
+                        name="prenom"
+                        placeholder="Votre prénom"
+                        required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="nom">Nom <span class="obligatoire">*</span></label></th>
+                    <td>
+                      <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Votre nom"
+                        required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="courriel">Courriel <span class="obligatoire">*</span></label></th>
+                    <td>
+                      <input
+                        type="email"
+                        id="courriel"
+                        name="courriel"
+                        placeholder="votre.email@exemple.com"
+                        required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <label for="message">Message <span class="obligatoire">*</span></label>
+                    </th>
+                    <td>
+                      <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Votre message..."
+                        rows="6"
+                        required>
+                      </textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button type="submit" class="btn-envoyer">
+                <i class="fas fa-paper-plane"></i>
+                Envoyer le message
+              </button>
+              <p class="contact-obligatoire">
+                <em>Tous les champs marqués d'un <span class="obligatoire">*</span> sont obligatoires</em>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Section de contact alternatif via les réseaux professionnels -->
+    <section class="section-autre-methode">
+      <div class="conteneur-cta">
+        <h2>Préférez-vous une autre méthode ?</h2>
+        <p>Retrouvez-moi également sur les réseaux professionnels</p>
+        <!-- Boutons vers LinkedIn, GitHub et le CV -->
+        <div class="autre-methode-boutons">
+          <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="btn btn-primaire">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://github.com/CodingIs4All" class="btn btn-github">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" class="btn btn-cv">
+            <i class="fas fa-file-alt"></i> Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p></p>
+  <!-- Pied de page avec texte et liens sociaux -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+      </div>
+    </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
