@@ -1,34 +1,191 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Hardy – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
+  <!-- En-tête du site avec logo et navigation -->
+  <header class="header">
+    <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+
+      <!-- Navigation principale -->
+      <nav class="nav-principale" id="navMobile">
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien actif">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Contenu principal de la page -->
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- Bannière d’introduction -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>À propos de moi</h1>
+        <p>Passionné de technologie et d'innovation</p>
+      </div>
+    </section>
+
+    <!-- Présentation personnelle -->
+    <section class="section-qui">
+      <div class="conteneur">
+        <div class="qui-flex">
+
+          <!-- Photo de présentation -->
+          <div class="qui-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80" alt="Nicolas Hardy – étudiant en développement web">
+          </div>
+
+          <!-- Texte de présentation -->
+          <div class="qui-texte">
+            <h2 class="qui-titre">Qui suis-je ?</h2>
+            <p>
+              Je suis <strong><mark>Nicolas Hardy</mark></strong>, un étudiant passionné en développement web
+              afin de devenir un "Full Stack Developer". Après plusieurs années dans le secteur de la construction,
+              j'ai décidé de suivre ma passion pour la technologie et de me reconvertir dans le domaine du 
+              développement informatique que j'ai découvert à la suite de mon programme en réseaux et cybersécurité.
+            </p>
+            <p>
+              Mon objectif est de bâtir une carrière à la croisée du <em>développement web</em>,
+              de la <em>cybersécurité</em> et du <em>trading algorithmique</em>. Trois domaines
+              qui me passionnent profondément.
+            </p>
+
+            <!-- Mots-clés rapides -->
+            <div class="qui-tags">
+              <span class="tag">🎓 Étudiant Cégep Shawinigan</span>
+              <span class="tag">📍 Granby, Québec</span>
+              <span class="tag">💻 Full Stack Dev / Réseaux & Cybersécurité</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Domaines qui me passionnent -->
+    <section class="section-passions">
+      <div class="conteneur">
+        <h2 class="section-titre">Ce qui me passionne</h2>
+        <div class="cartes-flex">
+
+          <!-- Carte cybersécurité -->
+          <div class="carte">
+            <div class="carte-icone icone-bleu">
+              <i class="fas fa-shield-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>Cybersécurité &amp; Hacking Éthique</h3>
+            <p>
+              Protéger les systèmes et comprendre les failles me fascine profondément.
+              Chaque défi en sécurité est unique et stimulant. C'est un domaine
+              où l'apprentissage ne s'arrête jamais.
+            </p>
+          </div>
+
+          <!-- Carte trading -->
+          <div class="carte">
+            <div class="carte-icone icone-violet">
+              <i class="fas fa-chart-line"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>Trading Algorithmique</h3>
+            <p>
+              Automatiser des stratégies de marché avec du code me passionne.
+              La combinaison de finance et de programmation ouvre des possibilités
+              infinies pour créer des systèmes intelligents.
+            </p>
+          </div>
+
+          <!-- Carte design web -->
+          <div class="carte">
+            <div class="carte-icone icone-turquoise">
+              <i class="fas fa-palette"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+            </div>
+            <h3>Design Web</h3>
+            <p>
+              Créer des interfaces belles et intuitives est ce qui me motive
+              au quotidien. Un bon design, c'est l'équilibre parfait entre
+              esthétique et fonctionnalité.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Valeurs personnelles -->
+    <section class="section-valeurs">
+      <div class="conteneur-valeurs">
+        <h2 class="section-titre">Mes valeurs</h2>
+
+        <!-- Liste des valeurs -->
+        <div class="valeurs-liste">
+          <p>
+            <strong>Excellence :</strong>
+            Je m'efforce de produire un code propre, maintenable et bien documenté.
+          </p>
+          <p>
+            <strong>Apprentissage continu :</strong>
+            La technologie évolue rapidement et je m'adapte en permanence pour rester à jour.
+          </p>
+          <p>
+            <strong>Curiosité :</strong>
+            Explorer de nouveaux domaines techniques est un moteur essentiel de mon développement.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- Pied de page avec texte et liens sociaux -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+      </div>
+    </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
