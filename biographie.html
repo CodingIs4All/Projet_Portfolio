@@ -1,34 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projet Portfolio - Accueil</title>
-  <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Hardy – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Icônes Font Awesome pour les boutons, cartes et réseaux sociaux -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="biographie.html">Biographie</a></li>
-        <li><a href="expertises.html">Expertises</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- En-tête du site avec logo et navigation -->
+  <header class="header">
+    <div class="header-conteneur">
+      <!-- Logo cliquable qui ramène à la page d'accueil -->
+      <a href="index.html" class="logo">Nicolas Hardy</a>
+
+      <!-- Bouton hamburger pour ouvrir le menu mobile -->
+      <button class="menu-hamburger" id="menuToggle"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="navMobile">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+      </button>
+
+      <!-- Navigation principale -->
+      <nav class="nav-principale" id="navMobile">
+        <!-- Bouton pour fermer le menu mobile -->
+        <button class="nav-fermer" id="navFermer" aria-label="Fermer le menu">&times;</button> <!-- RÉFÉRENCE: https://numerique.ostralo.net/html_css/p5b_caracteres_speciaux.htm -->
+        <!-- Liens de navigation du site -->
+        <ul>
+          <li><a href="index.html" class="nav-lien">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-lien">À propos</a></li>
+          <li><a href="biographie.html" class="nav-lien actif">Biographie</a></li>
+          <li><a href="expertise.html" class="nav-lien">Expertise</a></li>
+          <li><a href="projets.html" class="nav-lien">Projets</a></li>
+          <li><a href="contact.html" class="nav-lien">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+   <!-- Contenu principal de la page -->
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>en construction.</p>
+
+    <!-- Bannière d'introduction de la biographie -->
+    <section class="banniere">
+      <div class="banniere-contenu">
+        <h1>Ma Biographie</h1>
+        <p>Mon parcours professionnel et personnel</p>
+      </div>
+    </section>
+
+    <!-- Chronologie du parcours de carrière -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-bleu">
+            <i class="fas fa-graduation-cap"></i>
+          </span>
+          Cheminement de carrière
+        </h2>
+
+        <div class="timeline">
+          <!-- Objectifs futurs -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2027 et au-delà</span>
+            </div>
+            <h3>Objectifs futurs</h3>
+            <p>
+              Mon objectif est de devenir <mark>spécialiste en cybersécurité</mark> et
+              développeur web accompli. Je souhaite combiner mes passions pour la sécurité
+              informatique, le trading algorithmique et le design web afin de bâtir une
+              carrière unique à la croisée de ces domaines.
+            </p>
+          </div>
+
+          <!-- Formation actuelle -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>2024 – Présent</span>
+            </div>
+            <h3>Étudiant en développement web</h3>
+            <p>
+              Actuellement inscrit au programme <strong>Techniques de l'informatique</strong>
+              au CÉGEP Shawinigan, avec une spécialisation en développement web. J'y apprends
+              HTML, CSS, JavaScript, Git ainsi que les fondements mathématiques et logiques
+              de l'informatique.
+            </p>
+          </div>
+
+          <!-- Reconversion professionnelle -->
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Avant 2024</span>
+            </div>
+            <h3>Reconversion professionnelle</h3>
+            <p>
+              Après plusieurs années dans le domaine de la construction, j'ai pris la
+              décision de suivre ma passion pour la technologie et de me reconvertir dans
+              le développement informatique. Une décision qui a transformé ma trajectoire
+              professionnelle.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Expériences de travail -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-violet">
+            <i class="fas fa-briefcase"></i>
+          </span>
+          Expériences de travail
+        </h2>
+
+        <!-- Expérience principale -->
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">Entreprise de construction</h3>
+              <p class="experience-poste">Plâtrier</p>
+            </div>
+            <span class="experience-date">2020 – 2024</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Réalisation de travaux de plâtrage résidentiel et commercial</li>
+            <li>Gestion autonome des chantiers et respect des délais</li>
+            <li>Développement de compétences en rigueur, précision et travail d'équipe</li>
+          </ul>
+        </div>
+
+        <!-- Première expérience à venir -->
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">À venir</h3>
+              <p class="experience-poste">Poste à définir</p>
+            </div>
+            <span class="experience-date">2025 – ...</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+
+        <!-- Deuxième expérience à venir -->
+        <div class="experience-carte">
+          <div class="experience-entete">
+            <div>
+              <h3 class="experience-entreprise">À venir</h3>
+              <p class="experience-poste">Poste à définir</p>
+            </div>
+            <span class="experience-date">2026 – ...</span>
+          </div>
+          <ul class="experience-liste">
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Expériences de vie et centres d'intérêt -->
+    <section class="section-bio">
+      <div class="conteneur">
+
+        <h2 class="bio-titre-section">
+          <span class="bio-icone-titre icone-turquoise">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          Expériences de vie
+        </h2>
+
+        <div class="vie-blocs">
+          <!-- Intérêts personnels -->
+          <div class="vie-bloc">
+            <h3>Intérêts personnels</h3>
+            <p>
+              Passionné de jeux vidéo, notamment <strong>Hearthstone</strong>,
+              j'apprécie la stratégie et la profondeur des systèmes de jeu. En dehors du
+              gaming, je m'intéresse activement à la bourse et aux marchés financiers,
+              ce qui m'a naturellement conduit vers le trading algorithmique.
+            </p>
+          </div>
+
+          <!-- Retour aux études -->
+          <div class="vie-bloc">
+            <h3><mark>Retour aux études</mark></h3>
+            <p>
+              Décider de retourner aux études après plusieurs années sur le marché du
+              travail n'était pas une décision facile. C'est la passion pour la technologie
+              et la conviction que le développement web représente l'avenir qui m'ont
+              poussé à franchir ce pas.
+            </p>
+          </div>
+
+          <!-- Apprentissage continu -->
+          <div class="vie-bloc">
+            <h3>Apprentissage continu</h3>
+            <p>
+              <em>
+                Au-delà du code, j'explore des sujets comme la cybersécurité, le trading
+                algorithmique et le design d'interfaces. La curiosité est un moteur
+                essentiel de mon développement personnel et professionnel.
+              </em>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p></p>
+  <!-- Pied de page avec texte et liens sociaux -->
+  <footer class="footer">
+    <div class="footer-conteneur">
+      <p>Développeur Full Stack | Passionné de technologie</p>
+      <!-- Liens vers les réseaux sociaux et le CV -->
+      <div class="footer-liens">
+        <a href="https://github.com/CodingIs4All" class="footer-icone"
+           aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-hardy-998b6428b" class="footer-icone"
+           aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+        <a href="#" class="footer-icone" aria-label="CV">
+          <i class="fas fa-file-alt"></i> <!-- RÉFÉRENCE: https://www.angularjswiki.com/fontawesome/ -->
+        </a>
+      </div>
+    </div>
   </footer>
-
+  
+  <!-- Script JavaScript principal -->
   <script src="js/main.js"></script>
 </body>
 </html>
